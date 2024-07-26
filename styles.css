@@ -12,49 +12,11 @@ header {
     padding: 1em;
 }
 
-nav {
-    background-color: #4bd1e9;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 main {
     color: rgb(235, 77, 103);
     font-size: 30;
     text-align: center;
     padding: 20px;
-}
-
-#anhNen 
-{
-    width: 100%; /* Full viewport width */
-    height: auto;
-    background-color: #f5e9e9; /* Default background color */
-    background-size: cover; /* Ensure the image covers the entire element */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    color: rgb(235, 77, 103);
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cột bằng nhau */
-    justify-items: center; /* Căn giữa theo chiều ngang trong mỗi ô */
-    align-items: center; /* Căn giữa theo chiều dọc trong mỗi ô */
 }
 
 #container {
@@ -90,22 +52,6 @@ main {
 .my-button:hover {
     background-color: #45a049; /* Màu nền khi hover */
 }
-
-.image1
-{
-    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của container */
-    height: auto; /* Giữ tỉ lệ khung hình */
-    margin: 10px; /* Khoảng cách giữa các hình ảnh */
-    border-radius: 8px; /* Bo góc cho hình ảnh */
-} 
-
-.image2
-{
-    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của container */
-    height: auto; /* Giữ tỉ lệ khung hình */
-    margin: 10px; /* Khoảng cách giữa các hình ảnh */
-    border-radius: 8px; /* Bo góc cho hình ảnh */
-} 
 
 #buttonAXT
 {
