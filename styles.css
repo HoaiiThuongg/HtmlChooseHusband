@@ -1,0 +1,118 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ec5f72;
+    color: white;
+    font-size: 30;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #4bd1e9;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    color: rgb(235, 77, 103);
+    font-size: 30;
+    text-align: center;
+    padding: 1em;
+}
+
+#anhNen 
+{
+    /* background-image: url('images/anhNenTraiTim.png'); Ensure the correct file extension */
+    width: 100vw; /* Full viewport width */
+    height: 800px; /* Full height with units */
+    background-color: #f5e9e9; /* Default background color */
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: rgb(235, 77, 103);
+    font-size: 30px;
+    text-align: center;
+    padding: 1em;
+}
+
+.image1
+{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.image2
+{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#buttonHDD
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px; /* Khoảng cách bên trong */
+    text-align: center; /* Căn giữa văn bản */
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Hiển thị theo hàng */
+    font-size: 16px; /* Kích thước chữ */
+    margin: 4px 2px; /* Khoảng cách xung quanh */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+    border-radius: 8px; /* Bo góc nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#buttonAXT
+{
+    background-color: #f73100;
+    color: white;
+    padding: 15px 32px; /* Khoảng cách bên trong */
+    text-align: center; /* Căn giữa văn bản */
+    text-decoration: none; /* Xóa gạch chân */
+    display: inline-block; /* Hiển thị theo hàng */
+    font-size: 16px; /* Kích thước chữ */
+    margin: 4px 2px; /* Khoảng cách xung quanh */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+    border-radius: 8px; /* Bo góc nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+    position: absolute;
+    top: 81%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
