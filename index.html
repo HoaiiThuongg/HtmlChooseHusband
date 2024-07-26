@@ -16,18 +16,14 @@
             Chọn chồng của má đi
         </h>
     </main>
-    <div id="anhNen">
-        <img src="images/haiDangDoo.png" alt="HaiDangDoo" 
-        width="500" height="300" title="HaiDangDoo"
-        class="image1">
-
-        <img src="images/anhTraiXau.png" alt="AnhTraiXau" 
-        width="400" height="500" title="AnhTraiXau"
-        class="image2">
-        
+    <div id="container">
+        <div class="image-container">
+            <img src="images/haiDangDoo.png" alt="HaiDangDoo" class="image">
+            <button onclick="chooseHDD('images/anhNenTraiTim.png')" class="my-button">Chọn anh này</button>
+        </div>
+        <div class="image-container">
+            <img src="images/anhTraiXau.png" alt="AnhTraiXau" class="image">
+            <button id="buttonAXT" class="my-button">Chọn anh này</button>
+        </div>
     </div>
-
-    <button id="buttonHDD" onclick="chooseHDD('images/anhNenTraiTim.png')" type="button">Chọn anh này</button>
-    
-    <button id="buttonAXT">Chọn anh này</button>
 </body>

@@ -35,14 +35,13 @@ main {
     color: rgb(235, 77, 103);
     font-size: 30;
     text-align: center;
-    padding: 1em;
+    padding: 20px;
 }
 
 #anhNen 
 {
-    /* background-image: url('images/anhNenTraiTim.png'); Ensure the correct file extension */
-    width: 100vw; /* Full viewport width */
-    height: 800px; /* Full height with units */
+    width: 100%; /* Full viewport width */
+    height: auto;
     background-color: #f5e9e9; /* Default background color */
     background-size: cover; /* Ensure the image covers the entire element */
     background-position: center; /* Center the image */
@@ -50,61 +49,71 @@ main {
     color: rgb(235, 77, 103);
     font-size: 30px;
     text-align: center;
-    padding: 1em;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột bằng nhau */
+    justify-items: center; /* Căn giữa theo chiều ngang trong mỗi ô */
+    align-items: center; /* Căn giữa theo chiều dọc trong mỗi ô */
+}
+
+#container {
+    display: flex; /* Sử dụng Flexbox để căn giữa hai phần */
+    justify-content: center; /* Căn giữa các phần tử */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; /* Khoảng cách giữa hai phần tử (hình ảnh và nút) */
+    padding: 20px; /* Khoảng cách cho container */
+}
+
+.image-container {
+    display: flex; /* Sử dụng Flexbox để căn giữa hình ảnh và nút */
+    flex-direction: column; /* Xếp chồng hình ảnh và nút theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+.image {
+    max-width: 50%; /* Hình ảnh không vượt quá chiều rộng của container */
+    height: auto; /* Giữ tỉ lệ khung hình */
+    margin-bottom: 10px; /* Khoảng cách 10px giữa hình ảnh và nút */
+    border-radius: 8px; /* Bo góc cho hình ảnh */
+}
+
+.my-button {
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo góc cho nút */
+    cursor: pointer; /* Con trỏ chuột thành tay khi hover */
+}
+
+.my-button:hover {
+    background-color: #45a049; /* Màu nền khi hover */
 }
 
 .image1
 {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
+    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của container */
+    height: auto; /* Giữ tỉ lệ khung hình */
+    margin: 10px; /* Khoảng cách giữa các hình ảnh */
+    border-radius: 8px; /* Bo góc cho hình ảnh */
+} 
 
 .image2
 {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-}
-
-#buttonHDD
-{
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px; /* Khoảng cách bên trong */
-    text-align: center; /* Căn giữa văn bản */
-    text-decoration: none; /* Xóa gạch chân */
-    display: inline-block; /* Hiển thị theo hàng */
-    font-size: 16px; /* Kích thước chữ */
-    margin: 4px 2px; /* Khoảng cách xung quanh */
-    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
-    border-radius: 8px; /* Bo góc nút */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
-    position: absolute;
-    top: 70%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
+    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của container */
+    height: auto; /* Giữ tỉ lệ khung hình */
+    margin: 10px; /* Khoảng cách giữa các hình ảnh */
+    border-radius: 8px; /* Bo góc cho hình ảnh */
+} 
 
 #buttonAXT
 {
     background-color: #f73100;
     color: white;
-    padding: 15px 32px; /* Khoảng cách bên trong */
-    text-align: center; /* Căn giữa văn bản */
-    text-decoration: none; /* Xóa gạch chân */
     display: inline-block; /* Hiển thị theo hàng */
-    font-size: 16px; /* Kích thước chữ */
-    margin: 4px 2px; /* Khoảng cách xung quanh */
-    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
-    border-radius: 8px; /* Bo góc nút */
     transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
     position: absolute;
-    top: 81%;
-    left: 70%;
-    transform: translate(-50%, -50%);
 }
 
 footer {

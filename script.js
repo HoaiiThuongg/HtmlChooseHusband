@@ -1,5 +1,5 @@
 function chooseHDD(imageUrl) {
-    document.getElementById('anhNen').style.backgroundImage = `url('${imageUrl}')`;
+    document.getElementById('container').style.backgroundImage = `url('${imageUrl}')`;
 }
 
 function chayDi()
