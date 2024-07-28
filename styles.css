@@ -53,15 +53,6 @@ main {
     background-color: #45a049; /* Màu nền khi hover */
 }
 
-#buttonAXT
-{
-    background-color: #f73100;
-    color: white;
-    display: inline-block; /* Hiển thị theo hàng */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
-    position: absolute;
-}
-
 footer {
     background-color: #333;
     color: white;

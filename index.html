@@ -6,6 +6,9 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="images/.mp3" type="audio/mpeg">
+    </audio>
     <header>
         <h>
             Chào mẻ bánh bèo
@@ -19,11 +22,20 @@
     <div id="container">
         <div class="image-container">
             <img src="images/haiDangDoo.png" alt="HaiDangDoo" class="image">
-            <button onclick="chooseHDD('images/anhNenTraiTim.png')" class="my-button">Chọn anh này</button>
+            <button id="buttonHDD" class="my-button">Chọn anh này</button>
         </div>
         <div class="image-container">
-            <img src="images/anhTraiXau.png" alt="AnhTraiXau" class="image">
-            <button id="buttonAXT" class="my-button">Chọn anh này</button>
+            <img id="anhXauTrai" src="images/anhTraiXau1.png" alt="AnhTraiXau" class="image">
+            <button onclick="chooseAXT('anhXauTrai')" class="my-button">Chọn anh này</button>
+        </div>
+        <div class="image-container">
+            <img src="images/ThanhTuyen.png" alt="ThanhTuyen" class="image">
+            <button onclick="chooseHDD('images/anhNenTraiTim.png')" 
+            class="my-button">Chọn anh này</button>
+        </div>
+        <div class="image-container">
+            <img src="images/J97.png" alt="ThanhTuyen" class="image">
+            <button onclick="playJ97()" class="my-button">Chọn anh này</button>
         </div>
     </div>
 </body>
