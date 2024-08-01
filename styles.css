@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -19,6 +21,26 @@ main {
     padding: 20px;
 }
 
+canvas {
+    border: 2px solid #fff;
+    display: none; /* Ẩn canvas khi chưa bắt đầu game */
+}
+
+#messageChauAnh {
+    display: none; /* Ẩn dòng chữ mặc định */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#PongGame
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #container {
     display: flex; /* Sử dụng Flexbox để căn giữa hai phần */
     justify-content: center; /* Căn giữa các phần tử */
@@ -51,6 +73,18 @@ main {
 
 .my-button:hover {
     background-color: #45a049; /* Màu nền khi hover */
+}
+
+.my-button:active {
+    background-color: #4CAF50; /* Màu nền khi active */
+}
+
+.no-active-hover:active {
+    background-color: #4CAF50; /* Giữ nguyên màu nền khi nhấn */
+}
+
+.no-active-hover:hover {
+    background-color: #4CAF50; /* Giữ nguyên màu nền khi nhấn */
 }
 
 footer {

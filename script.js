@@ -1,6 +1,19 @@
-function chooseHDD(imageUrl) {
+const DzoGameButton = document.getElementById('gameChauAnh');
+const DzoGameText = document.getElementById('messageChauAnh');
+DzoGameButton.addEventListener('click', () => {
+        DzoGameText.style.display = 'block';
+});
+
+const OutGameButton = document.getElementById('outGameButton');
+const OutGameText = document.getElementById('messageChauAnh');
+OutGameButton.addEventListener('click', () => {
+        OutGameText.style.display = 'none';
+});
+
+function chooseTuyen(imageUrl) {
     document.getElementById('container').style.backgroundImage = `url('${imageUrl}')`;
 }
+
 
 let currentIndex = 2;
 
@@ -17,12 +30,6 @@ function chooseAXT(imageId)
     if (currentIndex > 4) {
         currentIndex = 1;
     }
-
-    // Tạo số ngẫu nhiên từ 0 đến 3
-    //const randomIndex = Math.floor(Math.random() * 4);
-
-    // Đổi hình ảnh
-    //img.src = `images/anhTraiXau${randomIndex + 1}.png`;
 }
 
 function chayDi()
@@ -43,4 +50,4 @@ function playJ97()
     thienLyOi.play();
 }
 
-document.getElementById('buttonHDD').addEventListener('mouseover', chayDi);
+//document.getElementById('buttonHDD').addEventListener('mouseover', chayDi);

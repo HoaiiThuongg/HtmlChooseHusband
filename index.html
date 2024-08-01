@@ -22,7 +22,7 @@
     <div id="container">
         <div class="image-container">
             <img src="images/haiDangDoo.png" alt="HaiDangDoo" class="image">
-            <button id="buttonHDD" class="my-button">Chọn anh này</button>
+            <button id="buttonHDD" class="my-button no-active-hover">Chọn anh này</button>
         </div>
         <div class="image-container">
             <img id="anhXauTrai" src="images/anhTraiXau1.png" alt="AnhTraiXau" class="image">
@@ -30,12 +30,26 @@
         </div>
         <div class="image-container">
             <img src="images/ThanhTuyen.png" alt="ThanhTuyen" class="image">
-            <button onclick="chooseHDD('images/anhNenTraiTim.png')" 
+            <button onclick="chooseTuyen('images/anhNenTraiTim.png')" 
             class="my-button">Chọn anh này</button>
         </div>
         <div class="image-container">
-            <img src="images/J97.png" alt="ThanhTuyen" class="image">
+            <img src="images/J97.png" alt="J97" class="image">
             <button onclick="playJ97()" class="my-button">Chọn anh này</button>
         </div>
+
+        <div class="image-container">
+            <img src="images/ChauAnh2.png" alt="ChauAnh" class="image">
+            <button id="gameChauAnh" class="my-button">Chọn anh này</button>
+        </div>
     </div>
+
+    <div id="messageChauAnh"> Hãy hứng DCA <br> Đừng làm rớt DCA <br> DCA không thích rớt, thích A+</div>
+
+    <div id = "PongGame">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <button id="outGameButton" style="display:none;">Pause</button>
+        <script src="game.js"></script>
+    </div>
+    
 </body>
